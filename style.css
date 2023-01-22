@@ -1,0 +1,140 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    line-height: 1.7;
+    padding-bottom: 800px;
+}
+
+/* Chapter 1*/
+
+.container-one {
+    max-width: 850px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.main-coloum {
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-one{
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-two{
+    flex: 1;
+    order: 3;
+}
+
+/* Chapter 2*/
+.container-two{
+    max-width: 850px;
+    margin: 50px auto;
+    
+}
+
+.services {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.services.one{
+    background-color:blueviolet ;
+}
+
+.services.two{
+    background-color:greenyellow ;
+}
+
+.services.three{
+    background-color:rgb(231, 102, 102) ;
+}
+
+/* Chapter 3 */
+.container-three{
+    max-width: 850px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail{
+    width: 45%;
+    margin: 10px;
+}
+
+.thumbnail img{
+    width: 100%;
+}
+
+/* Chapter 4 */
+.container-four{
+    max-width: 850px;
+    margin: 50px auto;
+    
+}
+
+.card {
+    border: 3px solid #aaa;
+    border-radius: 10px;
+    background-color: #eee;
+    margin: 10px;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.card .header{
+    height: 150px;
+    overflow: hidden;
+}
+
+.card .header img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .content{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* Responsive */
+@media(min-width:600px){
+    .container-two{
+        display: flex;
+        justify-content: space-between;
+    }
+    .services{
+        width: 30%;
+    }
+
+    .thumbnail{
+        width: 25%;
+    }
+
+    .container-four {
+        display: flex;
+    }
+
+    .card.main{
+        transform: scale(1.12);
+    }
+}

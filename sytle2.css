@@ -1,0 +1,131 @@
+html body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    line-height: 1.6;
+    padding-bottom: 800px;
+}
+
+.container-satu{
+    max-width: 850px;
+    margin: 50px auto;
+    display: flex;
+    background-color: aliceblue;
+    padding: 0 10px;
+}
+
+.kolom-utama{
+    flex: 3;
+    order: 2;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.sidebar-satu{
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-dua{
+    flex: 1;
+    order: 3;
+}
+
+/* latihan 2 */
+.container-dua{
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+.layanan {
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.layanan.satu{
+    background-color: blueviolet;
+}
+
+.layanan.dua{
+    background-color: greenyellow;
+}
+
+.layanan.tiga{
+    background-color: rgb(225, 78, 78);
+}
+
+/* latihan 3 */
+.container-tiga{
+    max-width: 850px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.thumbnail{
+    width: 46%;
+    margin: 10px;
+}
+
+.thumbnail img{
+    width: 100%;
+}
+
+/* latihan 4 */
+.container-empat{
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+.card {
+    border: 3px solid beige;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin: 10px;
+    transition: all .3s ease;
+}
+
+.card:hover{
+    transform: scale(1.12);
+}
+
+.card .header{
+    height: 150px;
+    overflow: hidden;
+}
+
+.card .header img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.card .content{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+@media(min-width:600px){
+    .container-dua{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .layanan{
+        width: 32%;
+    }
+
+    .thumbnail{
+        width: 30%;
+    }
+
+    .container-empat{
+        display: flex;
+    }
+}
